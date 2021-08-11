@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/thingsToDo.css">
+<link rel="stylesheet" href="/css/lightbox.css">
+<link rel="stylesheet" href="/css/fakeLoader.min.css">
+
+</head>
+<body>
+  <div class="fakeLoader"></div>
+  <header id="header" class="DownMove">
+    <h1><a href="/html/index.html"><img src="/img/logo.png" alt="" width="10%"></a></h1>
+    <nav id="nav">
+      <ul id="nav_list">
+        <li data-menuanchor="section_1"><a href="/html/index.html">Home</a></li>
+        <li data-menuanchor="section_2"><a href="/html/tripPlan.html">DISCOVER YOUR TRIP</a></li>
+        <li data-menuanchor="section_3"><a href="/html/thingsTodo.html">THINGS TO DO</a></li>
+        <li data-menuanchor="section_4"><a href="/html/aboutIceland.html">ABOUT ICELAND</a></li>
+      </ul>
+    </nav>
+    <div id="hamb">
+      <span class="inner_line" id="line1"></span>
+      <span class="inner_line" id="line2"></span>
+      <span class="inner_line" id="line3"></span>
+    </div>
+
+  </header>
+  <div class="title">
+    <h1>Things To Do</h1>
+  </div>
+  <main>
+    <ul class="sort-btn">
+      <li class="sort00 active">All</li>
+      <li class="sort01">Activity</li>
+      <li class="sort02">Culture</li>
+      <li class="sort03">Local</li>
+      <li class="sort04">Nature</li>
+    </ul>
+    <ul class="grid">
+      <li class="item sort01">
+        <div class="item-content"><a href="/img/nightsky10.jpg" data-lightbox="group1"><img src="/img/nightsky10.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort02">
+        <div class="item-content"><a href="/img/nightsky3.jpg" data-lightbox="group2"><img src="/img/nightsky3.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort03">
+        <div class="item-content"><a href="/img/town.jpg" data-lightbox="group3"><img src="/img/town.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort04">
+        <div class="item-content"><a href="/img/mountains13.jpg" data-lightbox="group4"><img src="/img/mountains13.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort01">
+        <div class="item-content"><a href="/img/nightsky2.jpg" data-lightbox="group1"><img src="/img/nightsky2.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort02">
+        <div class="item-content"><a href="/img/ocean2.jpg" data-lightbox="group2"><img src="/img/ocean2.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort03">
+        <div class="item-content"><a href="/img/town3.jpg" data-lightbox="group3"><img src="/img/town3.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort04">
+        <div class="item-content"><a href="/img/mountains5.jpg" data-lightbox="group4"><img src="/img/mountains5.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort01">
+        <div class="item-content"><a href="/img/road16.jpg" data-lightbox="group1"><img src="/img/road16.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort02">
+        <div class="item-content"><a href="/img/road6.jpg" data-lightbox="group2"><img src="/img/road6.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort03">
+        <div class="item-content"><a href="/img/town9.jpg" data-lightbox="group3"><img src="/img/town9.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort04">
+        <div class="item-content"><a href="/img/volcano.jpg" data-lightbox="group4"><img src="/img/volcano.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort01">
+        <div class="item-content"><a href="/img/waterfall5.jpg" data-lightbox="group1"><img src="/img/waterfall5.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort02">
+        <div class="item-content"><a href="/img/sheep2.jpg" data-lightbox="group2"><img src="/img/sheep2.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort03">
+        <div class="item-content"><a href="/img/town5.jpg" data-lightbox="group3"><img src="/img/town5.jpg" alt=""></a></div>
+      </li>
+      <li class="item sort04">
+        <div class="item-content"><a href="/img/icecave.jpg" data-lightbox="group4"><img src="/img/icecave.jpg" alt=""></a></div>
+      </li>
+
+    </ul>
+  </main>
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+  <script src="/js/muuri.min.js"></script>
+  <script src="/js/fakeLoader.min.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+
+      $.fakeLoader({
+        bgColor: '#39A2DB',
+        spinner: "spinner3",
+        timeToHide: 2000,
+      });
+
+      function hamb(){
+        $('#line1').toggleClass('line_1');
+        $('#line2').toggleClass('line_2');
+        $('#line3').toggleClass('line_3');
+        $('nav').toggleClass('in');
+        $('.section').toggleClass('overlay');
+        $('#menu').toggleClass('overlay');
+        $('#slider-overlay').toggleClass('show');
+      }
+      document.getElementById('hamb').addEventListener('click', function(){
+        hamb();
+      });
+
+      var nav = $('#nav');
+      $('main').click(function(){
+        if(nav.hasClass('in')){
+          hamb();
+        }
+      });
+
+      $(window).on('load', function () {
+        var grid = new Muuri('.grid', {
+          showDuration: 600,
+          showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+          hideDuration: 600,
+          hideEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+          visibleStyles: {
+            opacity: '1',
+            transform: 'scale(1)'
+          },
+          hiddenStyles: {
+            opacity: '0',
+            transform: 'scale(0.5)'
+          }
+        });
+
+        $('.sort-btn li').on('click', function () {	
+          $(".sort-btn .active").removeClass("active");
+          var className = $(this).attr("class");
+          className = className.split(' ');
+          $("." + className[0]).addClass("active");
+          if (className[0] == "sort00") {
+            grid.show('');
+          } else {
+            grid.filter("." + className[0]);
+          }
+        });
+
+        $('[data-lightbox]').lightbox({
+          thumbs: {
+            autoStart: true,
+          },
+        });
+      });
+    
+
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/jquery.fullpage.css">
+<link rel="stylesheet" href="/css/slinky.min.css">
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>
+  <header id="header" class="DownMove">
+    <h1><a href="/html/index.html"><img src="/img/logo.png" alt="" width="10%"></a></h1>
+    <nav id="nav">
+      <ul id="nav_list">
+        <li data-menuanchor="section_1"><a href="#section_1">Home</a></li>
+        <li data-menuanchor="section_2"><a href="#section_2">DISCOVER YOUR TRIP</a></li>
+        <li data-menuanchor="section_3"><a href="#section_3">THINGS TO DO</a></li>
+        <li data-menuanchor="section_4"><a href="#section_4">ABOUT ICELAND</a></li>
+        <li data-menuanchor="section_4"><a href="#section_5">FAQ</a></li>
+      </ul>
+    </nav>
+    <div id="hamb">
+      <span class="inner_line" id="line1"></span>
+      <span class="inner_line" id="line2"></span>
+      <span class="inner_line" id="line3"></span>
+    </div>
+
+  </header>
+  <main>
+
+    <div id="fullpage">
+      <div class="section" id="section-1">
+        <div id="load_slider"></div>
+        <div id="slider_overlay"></div>
+          <h1>ICELAND</h1>
+          <h2>The place,<br>You will find the path.</h2>
+          <div id="video_area">
+          <video id="video" webkit-playsinline playsinline muted autoplay loop>
+            <source src="/img/iceland.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="section" id="section-2">
+        <div class="page_title">
+          <h1>DISCOVER YOUR TRIP PLAN</h1>
+        </div>
+        <div id="menu">
+          <ul id="p_list">
+            <li>
+              <a href="#">
+                <span>I like ...</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Adventure</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">I am so curious about ...</a>
+                </li>
+                <li>
+                  <a href="#">Mountains</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_1">PLAN A</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Ocean</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_2">PLAN B</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Animals</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_3">PLAN C</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span>Driving</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">I like to drive ...</a>
+                </li>
+                <li>
+                  <a href="#">In the Mountains</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_1">PLAN A</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">By the beach</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_2">PLAN B</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Through the town</a>
+                  <ul>
+                    <li>
+                      <a href="/html/tripPlan.html#section_4">PLAN D</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span>Food</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">I must eat ...</a>
+                </li>
+                <li>
+                  <a href="#">Meat and seafood</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_3">PLAN C</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Local vegetables</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_4">PLAN D</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Traditional home meal</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_5">PLAN F</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span>Talking to people</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">I enjoy meeting people at ...</a>
+                </li>
+                <li>
+                  <a href="#">A bar</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_4">PLAN D</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Local market</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_5">PLAN E</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Activity</a>
+                  <ul>
+                    <li><a href="/html/tripPlan.html#section_1">PLAN A</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section" id="section-3">
+        <div class="page_title">
+          <h1>THINGS TO DO</h1>
+        </div>
+        <div id="thingsToDo">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FIyC3eCsL6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        </div>
+        <div class="findoutmore">
+          <button class="button">
+            <a href="/html/thingsTodo.html">FIND OUT MORE</a>
+          </button>
+        </div>
+      </div>
+      <div class="section" id="section-4">
+        <div class="page_title">
+          <h1>ABOUT ICELAND</h1>
+        </div>
+        <div class="about">
+          <div class="hero">
+            <h2>Soak in the nature</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe beatae nihil quas culpa alias. Minus nisi odio quos accusantium magni nemo suscipit at sit labore expedita, sunt sapiente eius.</p>
+            <button class="button"><a href="/html/aboutIceland.html">READ MORE</a></button>
+          </div>
+          <div class="hero_img">
+            <img src="/img/waterfall15.jpg" alt="" width="100%">
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section-5">
+        <div class="page_title">
+          <h1>FAQ</h1>
+        </div>
+        <div id="accordion">
+          <h3>How do I get to Iceland?</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, animi ex. Aliquam ad odio assumenda maiores minima. Ipsam, autem non? Laborum rerum aliquam beatae eligendi corrupti optio, saepe nulla ex</p>
+          </div>
+          <h3>Do people tip in Iceland?</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, animi ex. Aliquam ad odio assumenda maiores minima. Ipsam, autem non? Laborum rerum aliquam beatae eligendi corrupti optio, saepe nulla ex</p>
+          </div>
+          <h3>Is Iceland safe place to travel?</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, animi ex. Aliquam ad odio assumenda maiores minima. Ipsam, autem non? Laborum rerum aliquam beatae eligendi corrupti optio, saepe nulla ex</p>
+          </div>
+          <h3>How big is Iceland?</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, animi ex. Aliquam ad odio assumenda maiores minima. Ipsam, autem non? Laborum rerum aliquam beatae eligendi corrupti optio, saepe nulla ex</p>
+          </div>
+          <h3>What currency is used?</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, animi ex. Aliquam ad odio assumenda maiores minima. Ipsam, autem non? Laborum rerum aliquam beatae eligendi corrupti optio, saepe nulla ex</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/jquery.js"></script>
+  <script src="/vendors/jquery.easings.min.js"></script>
+  <script src="/js/jquery.fullpage.js"></script>
+  <script src="/js/quietflow.js"></script>
+  <script src="/js/slinky.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/jquery.fitvids.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('#fullpage').fullpage({
+        loopBottom: true,
+        anchors:['section_1', 'section_2', 'section_3', 'section_4', 'section_5'],
+        menu: '#nav_list'
+      
+      });
+
+      $(window).on('load', function(){
+        $('#load_slider').toggleClass('active');
+      });
+
+      function hamb(){
+        $('#line1').toggleClass('line_1');
+        $('#line2').toggleClass('line_2');
+        $('#line3').toggleClass('line_3');
+        $('nav').toggleClass('in');
+        $('.section').toggleClass('overlay');
+        $('#menu').toggleClass('overlay');
+        $('#slider_overlay').toggleClass('show');
+      }
+      document.getElementById('hamb').addEventListener('click', function(){
+        hamb();
+      });
+
+      var nav = $('#nav');
+      $('main').click(function(){
+        if(nav.hasClass('in')){
+          hamb();
+        }
+      });
+
+      const slinky = $('#menu').slinky()
+
+      $('#accordion').accordion();
+
+      $('#thingsToDo').fitVids();
+      
+      
+
+    });
+  </script>
+  
+</body>
+</html>
